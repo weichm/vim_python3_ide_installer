@@ -131,7 +131,7 @@ do
 	mv "$OLD_FILENAME" "$NEW_FILENAME"
 
 	# Remove all lines containing one of the setting keywords used for controlling Vim indentation.
-	cat $NEW_FILENAME | grep -Ev 'expandtab' | grep -Ev 'shitwidth' | grep -Ev 'softtabstop' | grep -Ev 'tabstop' > $OLD_FILENAME
+	cat $NEW_FILENAME | grep -Ev 'expandtab' | grep -Ev 'shiftwidth' | grep -Ev 'softtabstop' | grep -Ev 'tabstop' > $OLD_FILENAME
 done
 
 
